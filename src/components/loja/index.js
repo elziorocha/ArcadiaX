@@ -1,0 +1,1 @@
+export { default as LojaItem } from "./LojaItem/LojaItem";

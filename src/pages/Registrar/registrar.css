@@ -1,0 +1,84 @@
+section {
+    background: #000;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  
+  section::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#000,#3A0CA3,#000);
+    animation: animate 5s linear infinite;
+  }
+  
+  @keyframes animate {
+    0%
+    {
+      transform: translateY(-100%);
+    }
+    100%
+    {
+      transform: translateY(100%);
+    }
+  }
+  
+  section span {
+    position: relative;
+    display: block;
+    width: calc(6.25vw - 2px);
+    height: calc(6.25vw - 2px);
+    background: #0a0a0ab4;
+    z-index: 2;
+    transition: 1.5s;
+  }
+  
+  section span:hover 
+  {
+    background: #601b8f;
+    transition: 0s;
+  }
+  
+  section h2 {
+    top: 0px;
+    right: 20%;
+    position: absolute;
+    left: 20%;
+    color: #ac04ac;
+  }
+  
+  section .campo-login {
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    background: #2c0c4842;  
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(0,0,0,9);
+    border: solid 3px #2c0c48;
+    margin-bottom: 120px;
+  }
+  
+  .campo-input {
+      width: 250px;
+      height: 35px;
+      border-radius: 5px;
+      background: #4c4a4a;
+      border: solid 2px black
+  }
+  
+  .form {
+      color: white;
+  }
