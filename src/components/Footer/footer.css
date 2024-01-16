@@ -3,20 +3,18 @@
     padding-left: 10px;
     padding-right: 20px;
     display: flex;
-    justify-content: space-between;
-    height: 180px;
+    flex-direction: column;
+    height: auto;
     border-top: solid 6px black;
 }
 
-.routes-titulo{
+.routes-titulo {
     color: rgb(197, 209, 218);
     text-decoration: none;
-    display: flex;
     padding: 5px;
-    margin-top: 55px;
 }
 
-.routes-titulo:hover{
+.routes-titulo:hover {
     transition: 1s;
     color: purple;
 }
@@ -24,23 +22,23 @@
 nav ul {
     list-style: none;
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
 }
-  
+
 nav ul li {
-    display: inline;
+    display: block;
+    margin-bottom: 10px;
 }
 
 .links_footer {
     background-color: rgb(92, 86, 99);
     border-radius: 10px;
     border: solid 2px black;
-    width: 600px;
-    padding-left: 0px;
-    padding-right: 3px;
-    padding-bottom: 1px;
-    margin-left: 6.5%;
-    margin-top: 22px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px 0;
 }
 
 .links_footer2 {
@@ -58,12 +56,42 @@ nav ul li {
 }
 
 .texto_footer {
-    display: flex;
     color: antiquewhite;
     font-size: 12px;
-    max-width: 750px;
-    padding: 5px;
-    margin-top: 20px;
-    margin-right: 270px;
+    max-width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
     text-align: center;
+    margin-right: 0;
+}
+
+@media (min-width: 768px) {
+    #footer {
+        flex-direction: row;
+        height: 180px;
+    }
+
+    .routes-titulo {
+        margin-top: 55px;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+
+    .links_footer {
+        width: 600px;
+        margin-left: 6.5%;
+        margin-top: 22px;
+    }
+
+    .texto_footer {
+        margin-right: 270px;
+    }
 }

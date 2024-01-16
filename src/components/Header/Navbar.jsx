@@ -48,7 +48,7 @@ const Navbar = () => {
             </ul>
 
             <ul className='connect-list d-flex justify-content-center align-items-center mt-5 flex-wrap'>
-              <li className='text-uppercase fw-7 w-100 connect-text mb-2'>conectar</li>
+              <Link to = "/login" className='nav-link'>conectar</Link>
               <li className='connect-item'>
                 <Link to = "/" className='connect-link'>
                   <BsRssFill />

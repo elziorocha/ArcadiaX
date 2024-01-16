@@ -1,9 +1,15 @@
 #jogos {
     background-color: var(--clr-violet-dark-active);
-    height: 565vh;
+    height: 575vh;
 }
 
 .sc-jogos{
     min-height: 100vh;
     padding-top: 65px;
+}
+
+@media (max-width: 768px) {
+    #jogos {
+        height: 1030vh;
+    }
 }

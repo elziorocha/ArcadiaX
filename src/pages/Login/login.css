@@ -111,3 +111,14 @@ section .campo-login {
 .form {
     color: white;
 }
+
+@media (max-width: 768px) {
+  section {
+    height: 100vh;
+  }
+  section span {
+    height: 10%;
+    width: 17%;
+    margin-bottom: -1px;
+  }
+}
